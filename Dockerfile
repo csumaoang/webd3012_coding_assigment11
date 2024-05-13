@@ -4,6 +4,9 @@ FROM node:20-alpine
 # set working directory
 WORKDIR sumaoang_cedric_site
 
+# set port for react app
+ENV PORT 7775
+
 # copy package and lock files
 COPY package.json .
 COPY package-lock.json .
